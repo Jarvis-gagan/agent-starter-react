@@ -23,7 +23,6 @@ export const revalidate = 0;
 
 export async function POST(req: Request) {
   // make an exception for the vercel preview environment
-  
   try {
     if (LIVEKIT_URL === undefined) {
       throw new Error('LIVEKIT_URL is not defined');
